@@ -1,0 +1,256 @@
+header{
+  height: 8vh;
+  background-color: #3D3B40;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FCECFC;
+}
+header ul{
+  display: flex;
+  list-style: none;
+  gap: clamp(5px,4vw,100px);
+  margin: clamp(5px,30px,40px);
+}
+header li{
+  font-size: clamp(20px,2vw,50px);
+  cursor: pointer;
+  transition: ease .2s;
+}
+header h1{
+  font-size: clamp(30px,3vw,60px);
+  margin: clamp(10px,2vw,30px);
+}
+header button{
+  width: 50px;
+  height: 30px;
+  font-size: clamp(20px,2vw,50px);
+  border: none;
+  background-color: transparent;
+  color: #FCECFC; 
+  cursor: pointer;
+  transition: ease .2s;
+}
+header li:hover{
+  color: #545CEC;
+}
+header button:hover{
+  color: #545CEC;
+}
+ 
+.introduction{
+  height:100vh;
+
+  display: flex;
+  align-items: center;
+}
+.textinfo{
+  margin-left: clamp(2px,5vw,100px);
+  color: #3D3B40;
+}
+.textinfo h3{
+  font-size: clamp(5px,5vw,100px);
+}
+.textinfo h1{
+  font-size: clamp(30px,5vw,100px);
+  
+  animation: ColorChange 4s infinite;
+}
+.textinfo p{
+  font-size: clamp(15px,2vw,100px);
+}
+.textinfo button{
+  margin-top: 10px;
+  width: clamp(5rem,6vw,10rem);
+  height: 2rem;
+  cursor: pointer;
+  color: #3D3B40;
+  
+  transition: ease .2s;
+}
+.textinfo button:hover{
+  font-weight: bolder;
+  width: clamp(7rem,7vw,10rem);
+  height: 2.5rem;
+    font-size: clamp(20px,1.2vw,40px) ;
+    color: #545CEC;
+}
+
+@keyframes ColorChange {
+  0%{color:#3D3B40; }
+  50%{color: #424af3;}
+  100%{color: #3D3B40;}
+}
+.title{
+   height:100vh;
+   
+}
+.titlehead{
+  text-align: center;
+  font-size: clamp(1.5rem,3vw,10rem);
+  color: #3D3B40;
+}
+.about{
+  display: flex;
+  flex-direction: row;
+  margin: clamp(2px,2vw,100px);
+  align-items: center;
+ 
+  gap: 1.5rem ;
+}
+.img{
+  display: flex;
+  justify-content: center;
+  width: clamp(2rem,40vw,100rem);
+ 
+  align-items: center;
+}
+.img img{
+  height: auto;
+  width: clamp(16rem,30vw,100rem);
+}
+.textAbout{
+  color: #3D3B40;
+  width: clamp(1rem,60vw,100rem);
+  
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: clamp(2px, 2vw,10px);
+}
+.textAbout h1{
+  font-size: clamp(1.5rem,4vw,10rem);
+  transition: ease .2s;
+}
+.textAbout h2{
+  font-size: clamp(15px, 3vw,40px);
+}
+.textAbout p{
+  font-size: clamp(16px,1.5vw,30px);
+}
+.links{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  font-size: clamp(1.5rem,2vw,3rem);
+ 
+}
+.name{
+  animation: ColorChange 4s infinite;
+}
+.links a{
+  margin-top: 10px;
+   color: #3D3B40;
+   transition: ease .3s;
+}
+.links a:hover{
+  color: #545CEC;
+  font-size: clamp(2rem,2.5vw,3.5rem);
+}
+.Skills{
+  height: clamp(30rem, 95vh, 80rem);
+  
+
+}
+
+.cardContainer{
+  display: grid;
+  grid-template-columns: repeat(3, clamp(8rem, 15vw, 30rem));
+  gap:clamp(1rem , 5vw, 20rem);
+  justify-content: center;
+  
+  margin-top:2rem;
+}
+.card{
+  padding:1vw;
+  height: clamp(10rem,30vh,23rem);
+  border-radius: 10px;
+  background-color: #545CEC;
+}
+.icon{
+display: flex;
+align-items: center;
+justify-content: center;
+  text-align: center;
+background-color: #FCECFC;
+ border-radius: 10px;
+  color: #3D3B40;
+  font-size: clamp(3rem,5vw, 20rem);
+  width: clamp(7.4rem, 13vw, 20rem);
+  height: clamp(9rem,10vw,50rem);
+}
+
+.textBoxCard{
+ margin: 5px;
+  color: #FCECFC;
+  height: clamp(2rem,30vw,5rem);
+}
+.textBoxCard h1{
+  margin-top: 5px;
+  font-size: clamp(20px,2vw,100px)
+}
+.textBoxCard p{
+  font-size: clamp(12px, 1vw,20px);
+}
+
+.projects{
+  height: 100vh;
+
+}
+.projectAlbum{
+  margin-top:2rem ;
+  display: flex;
+  justify-content: center;
+  
+  flex-direction: column;
+  gap: clamp(16px, 1vw, 30px);
+  
+}
+.projectCard img{
+  width: clamp(15rem, 20vw, 30rem);
+  height:auto;
+  image-rendering: optimizeSpeed;
+  border-radius:10px ;
+  border: #545CEC 3px solid;
+}
+.projectCard{
+  display: flex;
+  margin: 10px;
+}
+.textProject{
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  gap: 5px;
+  color: #3D3B40;
+}
+.textProject h1{
+  font-size: clamp(20px, 3vw,  50px);
+  
+}
+.textProject p{
+  font-size: clamp(15px, 1.5vw,50px);
+}
+.textProject button{
+  margin-top: 10px;
+  width: clamp(75px,10vw,110px);
+  height: clamp(25px,5vh,35px);
+}
+.textProject button:hover{
+ transition: ease .2s;
+  width: clamp(80px,10vw,115px);
+  height: clamp(30px,5vh,40px);
+  
+  
+}
+.textProject a{
+ color: #3D3B40;
+ text-decoration: none;
+ transition: ease .2s;
+ font-weight: bold;
+ font-size: clamp(13px,2vw,20px);
+}
+.textProject a:hover{
+  color: #545CEC;
+  
+}
